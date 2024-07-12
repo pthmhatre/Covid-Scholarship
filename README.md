@@ -35,8 +35,8 @@ educational need.So basically the main aim of the scheme is covered this project
 <img src="https://github.com/user-attachments/assets/4b1fc6a9-d2c8-46b5-b7fa-e685e5c6cb38">
 <img src="https://github.com/user-attachments/assets/0c1e3eaf-b3fb-43f3-b937-61a85e7e4226">
 <img src="https://github.com/user-attachments/assets/9f8a5385-e850-47a3-a387-4119b17ecd88">
-<img src="https://github.com/user-attachments/assets/efb40e29-c068-450e-91b3-79f32c8a4945">
-<img src="https://github.com/user-attachments/assets/c57edde9-8fff-400c-8629-fa2deb1948a3">
+<img src="https://github.com/user-attachments/assets/5d89914a-97c6-4dde-b0f3-ad0d79a85794">
+<img src="https://github.com/user-attachments/assets/2ff01738-4247-4a6e-b905-516098ecbbb9">
 </p>
 
 # How to Setup this Application:
