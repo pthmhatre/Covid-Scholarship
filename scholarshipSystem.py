@@ -14,6 +14,12 @@ root00.state('zoomed')
 bg = ImageTk.PhotoImage(file="images\img.jpg")
 bg_image = Label(root00, image=bg).place(x=0, y=0, relwidth=1, relheight=1)
 
+
+#==============================Add your DATABASE PASSWORD HERE=========================================
+def databaseAddress():
+    return pymysql.connect(host='localhost', user='root', password="", database='Scholarship')
+#======================================================================================================
+
 #************************************ All Data-Base Functions ************************************
 
 #                          ***** Personal *******
@@ -22,7 +28,7 @@ def Personal_details(np1,np2,np3,np4,np5,np6,np7,np8):
     if np1 == "" or np2 == "" or np3== "" or np4 == "" or np5== "" or np6 == "" or np7 == "" or np8 == "":
         messagebox.showerror("Error", "All Fields are Required")
     else:
-        con = pymysql.connect(host='localhost', user='root', password="", database='Scholarship')
+        con  = databaseAddress()
         cur = con.cursor()
         cur.execute('select * from Personal where P_email = %s ',np2)
         row = cur.fetchone()
@@ -54,7 +60,7 @@ def Past(npa1,npa2,npa3,npa4,npa5,npa6):
     if npa1 == "" or npa2 == "" or npa3== "" or npa4 == "" or npa5== "" or npa6 == "":
         messagebox.showerror("Error", "All Fields are Required")
     else:
-        con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+        con  = databaseAddress()
         cur = con.cursor()
         cur.execute('insert into Past_q(LPE,E_stream,School,E_board,Marks,Mark_name) values(%s,%s,%s,%s,%s,%s)',
                     (
@@ -82,7 +88,7 @@ def Current(nc1,nc2,nc3,nc4,nc5):
     if nc1 == "" or nc2 == "" or nc3== "" or nc4 == "" or nc5== "":
         messagebox.showerror("Error", "All Fields are Required")
     else:
-        con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+        con  = databaseAddress()
         cur = con.cursor()
         cur.execute('insert into Current(Stream,University,College_N,Course,D_course) values(%s,%s,%s,%s,%s)',
                     
@@ -110,7 +116,7 @@ def Address(na1,na2,na3,na4,na5,na6):
     if na1 == "" or na2 == "" or na3== "" or na4 == "" or na5== "" or na6 =="":
         messagebox.showerror("Error", "All Fields are Required")
     else:
-        con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+        con  = databaseAddress()
         cur = con.cursor()
         cur.execute('insert into Address(Line_1,Line_2,State,Village,District,Pincode) values(%s,%s,%s,%s,%s,%s)',
                     (
@@ -135,7 +141,7 @@ def Address(na1,na2,na3,na4,na5,na6):
 
 #      *********** Fetch for Available Courses ************
 def Fetch1():
-    con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+    con  = databaseAddress()
     cur = con.cursor()
     cur.execute('Select * from Current ORDER BY id DESC LIMIT 1')
     give = cur.fetchall()
@@ -143,7 +149,7 @@ def Fetch1():
             give = c1[1]
             return give
 def Fetch2():
-    con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+    con  = databaseAddress()
     cur = con.cursor()
     cur.execute('Select * from Current ORDER BY id DESC LIMIT 1')
     give = cur.fetchall()
@@ -156,7 +162,7 @@ def Gardian(ng1,ng2,ng3,ng4,ng5):
     if ng1 == "" or ng2 == "" or ng3== "" or ng4 == "" or ng5== "":
         messagebox.showerror("Error", "All Fields are Required")
     else:
-        con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+        con  = databaseAddress()
         cur = con.cursor()
         cur.execute('insert into Gaurdians(G_name,G_relation,G_email,G_address,G_phone) values(%s,%s,%s,%s,%s)',
                     (
@@ -182,7 +188,7 @@ def Scholar(ns1):
     if ns1 == "":
         messagebox.showerror("Error", "All Fields are Required")
     else:
-        con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+        con  = databaseAddress()
         cur = con.cursor()
         cur.execute('insert into Scholar(S_type) values(%s)',
                     (
@@ -207,7 +213,7 @@ def Reg(r1,r2,r3,r4,r5):
     if r1 == "" or r2 == "" or r3 == "" or r4 == "" or r5 == "":
         messagebox.showerror("Error", "All Fields are Required")
     else:
-        con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+        con  = databaseAddress()
         cur = con.cursor()
         cur.execute('select * from Reg where Email = %s ', r2)
         row = cur.fetchone()
@@ -233,7 +239,7 @@ def Log(l1,l2):
     if l1 == "" or l2 == "":
         messagebox.showerror("Error", "All Fields are Required")
     else:
-        con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+        con  = databaseAddress()
         cur = con.cursor()
         cur.execute('select * from Reg where User =%s and Password =%s',
                     (l1,l2))
@@ -607,7 +613,7 @@ def home_main6():
 
 def fetch_data(query):
     try:
-        con = pymysql.connect(host='localhost', user='root', password='', database='Scholarship')
+        con  = databaseAddress()
         cur = con.cursor()
         cur.execute(query)
         result = cur.fetchone()
