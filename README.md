@@ -42,7 +42,7 @@ educational need.So basically the main aim of the scheme is covered this project
 # How to Setup this Application:
 Step 1: Install Python and MySQL.<br>
 Step 2: Download GitHub Repository.<br>
-Step 3: Installation of Libraries
+Step 3: Installation of Libraries.<br>
 ```python
        pip intall pillow
        pip install cryptography
@@ -50,12 +50,12 @@ Step 3: Installation of Libraries
        pip install pymysql
        pip install fpdf
 ```
-Step 4: Go to Command Prompt
+Step 4: Go to Command Prompt.<br>
 ```bash
        "C:\Program Files\MySQL\MySQL Server X.X\bin\mysql" mysql -u root -p
 ```
 ```bash
-       source path\to\database.sql;
+       source path\to\database.sql
 ```
 Step 5:Go to Code Editor Terminal
 ```bash
