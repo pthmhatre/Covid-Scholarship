@@ -41,5 +41,14 @@ educational need.So basically the main aim of the scheme is covered this project
 
 # How to Setup this Application:
 Step 1: Install Python and MySQL.<br>
-Step 2: 
+Step 2: Download GitHub Repository.<br>
+Step 3: 
+Step 4: Go to Command Prompt
+```bash
+       "C:\Program Files\MySQL\MySQL Server X.X\bin\mysql" mysql -u root -p
+```
+```bash
+       source path/to/database.sql;
+```
 
+       
