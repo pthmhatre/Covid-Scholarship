@@ -56,7 +56,7 @@ Step 4: Go to Command Prompt.<br>
 ```bash
        source path\to\database.sql
 ```
-Step 5: Add password scholarshipSystem.py in databaseAddress() function. 
+Step 5: Add Password scholarshipSystem.py in databaseAddress() function.<br>
 Step 6: Go to Code Editor Terminal
 ```bash
        python -u "path\to\scholarshipSystem.py"
