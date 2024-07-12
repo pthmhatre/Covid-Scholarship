@@ -559,7 +559,7 @@ def home_main5():
         name_lab40=Label(Frame_Home6, text="Stream Selected  : ", font=('Times New Roman',20), fg="Black", bg="white"  ).place(x=330, y=150)
         name_inp40=Label(Frame_Home6,text=Fetch1(), font=('Times New Roman',20,'normal'),bg="#FCFFE9").place(x=550, y=150, width=220,height=40)
 
-        name_lab41=Label(Frame_Home6, text="Courses   : ", font=('Times New Roman',20), fg="Black", bg="white"    ).place(x=150, y=230)
+        name_lab41=Label(Frame_Home6, text="Course   : ", font=('Times New Roman',20), fg="Black", bg="white"    ).place(x=150, y=230)
         name_inp41=Label(Frame_Home6,text=Fetch2(), font=('Times New Roman',20,'normal'),bg="#FCFFE9"  ).place(x=290, y=230, width=220,height=40)
 
         name_lab44=Label(Frame_Home6, text="Scholarships   : ", font=('Times New Roman',20), fg="Black", bg="white").place(x=570, y=230)
