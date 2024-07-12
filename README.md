@@ -46,7 +46,6 @@ Step 3: Installation of Libraries.<br>
 ```python
        pip intall pillow
        pip install cryptography
-       pip install tk-tools
        pip install pymysql
        pip install fpdf
 ```
