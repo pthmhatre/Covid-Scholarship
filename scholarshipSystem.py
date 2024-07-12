@@ -17,7 +17,7 @@ bg_image = Label(root00, image=bg).place(x=0, y=0, relwidth=1, relheight=1)
 
 #==============================Add your DATABASE PASSWORD HERE=========================================
 def databaseAddress():
-    return pymysql.connect(host='localhost', user='root', password="parth@2016", database='Scholarship')
+    return pymysql.connect(host='localhost', user='root', password="", database='Scholarship')
 #======================================================================================================
 
 #************************************ All Data-Base Functions ************************************
