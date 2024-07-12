@@ -17,7 +17,7 @@ bg_image = Label(root00, image=bg).place(x=0, y=0, relwidth=1, relheight=1)
 
 #==============================Add your DATABASE PASSWORD HERE=========================================
 def databaseAddress():
-    return pymysql.connect(host='localhost', user='root', password="", database='Scholarship')
+    return pymysql.connect(host='localhost', user='root', password="parth@2016", database='Scholarship')
 #======================================================================================================
 
 #************************************ All Data-Base Functions ************************************
@@ -463,9 +463,9 @@ def home_main3():
         def reset3():
             n21_input.set("")
             Name2_input.set("-- Select --")
-            n22_input.set("-- Select --")
+            n22_input.set("")
             name_inp23.set("")
-            name_inp24.set("")
+            name_inp24.set("-- Select --")
 
         frame_head=Label(Frame_Home4, text="Current Course", font=("Times New Roman", 35, "bold"), fg="Black", bg="white").place(x=400, y=10)
         Name2_input=StringVar()
@@ -476,16 +476,16 @@ def home_main3():
         choices2={'B.E','B.Tech','M.E','M.Tech','B.sc','M.Sc'}
         choices3={'Science','Commerce','Arts'}
         Name2_input.set('Select One')
-        n22_input.set('Select One')
+        n23_input.set('Select One')
         name_lab20=Label(Frame_Home4, text="Stream        : ", font=('Times New Roman',20), fg="Black", bg="white").place(x=100, y=150)
         name_inp20=OptionMenu(Frame_Home4,Name2_input, *choices3  ).place(x=260, y=150, width=220,height=40)
         name_lab21=Label(Frame_Home4, text="University   : ", font=('Times New Roman',20), fg="Black", bg="white" ).place(x=100, y=230)
         name_inp21=Entry(Frame_Home4,textvariable=n21_input ,font=('Times New Roman',20,'normal'),bg="#FCFFE9"    ).place(x=260, y=230, width=220,height=40)
 
         name_lab22=Label(Frame_Home4, text="Courses  : ", font=('Times New Roman',20), fg="Black", bg="white").place(x=340, y=330)
-        name_inp22=OptionMenu(Frame_Home4,n22_input,*choices2    ).place(x=460, y=330, width=220,height=40)
+        name_inp22=OptionMenu(Frame_Home4,n23_input,*choices2    ).place(x=460, y=330, width=220,height=40)
         name_lab23=Label(Frame_Home4, text="College Name    : ", font=('Times New Roman',20), fg="Black", bg="white"   ).place(x=570, y=150)
-        name_inp23=Entry(Frame_Home4,textvariable=n23_input ,font=('Times New Roman',20,'normal'),bg="#FCFFE9"         ).place(x=810, y=150, width=220,height=40)
+        name_inp23=Entry(Frame_Home4,textvariable=n22_input ,font=('Times New Roman',20,'normal'),bg="#FCFFE9"         ).place(x=810, y=150, width=220,height=40)
         name_lab24=Label(Frame_Home4, text="Duration Of Course : ", font=('Times New Roman',20), fg="Black", bg="white").place(x=570, y=230)
         name_inp24=Entry(Frame_Home4,textvariable=n24_input,font=('Times New Roman',20,'normal'),bg="#FCFFE9"     ).place(x=810, y=230, width=220,height=40)
         Frame3_btn21=Button(Frame_Home4,command=Current1,text="Save",bd=0,bg="#d77337",fg="white",font=("times new roman",20) ).place(x=340,y=530,width=180,height=50)
@@ -639,7 +639,7 @@ def Fetch05():
     return fetch_data('SELECT S_type FROM Scholar ORDER BY id DESC LIMIT 1')
 
 def Fetch06():
-    return fetch_data('SELECT D_course FROM Current ORDER BY id DESC LIMIT 1')
+    return fetch_data('SELECT Course FROM Current ORDER BY id DESC LIMIT 1')
 
 def Fetch07():
     return fetch_data('SELECT College_N FROM Current ORDER BY id DESC LIMIT 1')
