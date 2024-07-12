@@ -6,25 +6,6 @@ gems of country suffered a huge lost due to this pandemic so called “COVID-19�
 was not available to them.But the country should rise and shine and education mustgo on.So we came up with the scholarship to those students who lost
 their earning source during this bad time.</div>
 
-# Literature Review
-<div align="justify">
-In ‘The Digital Humanities Summer Scholarship’ published in 2017.Summer
-scholarships provide an opportunity for undergraduate students to apply their
-learning in a practical way and develop their research skills in addition to their
-studies.The main motive is to give scholarships on merit basis and ensure that the
-system works efficiently. So basically they provided scholarship for a particular
-interval of time for some other specialization course to the students.They also tried
-to optimize the level of application.
-<br><br>
-This scholarship is unique and is provided to poverty line students. It had many benefits
-and was easy to apply and available on any platform easily. Basically the main motto was to 
-provide education to poor people for the betterment of youngsters.As we all know that gaining
-education for poor people is very difficult. This scheme had various types of
-scholarship depending upon the criteria that matches with the student. They had also
-provided various helpline numbers so that if someone is not able to fill the form they
-can contact the respective person and solve the issue.
-</div>
-
 # Problem Statement
 <div align="justify">
 Many people's minds have been thrown off by COVID-19, leaving them unclear of
